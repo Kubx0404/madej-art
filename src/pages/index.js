@@ -11,11 +11,9 @@ export default function home() {
         <div className="media_div"></div>
       </div>
 
-      <div className="big_div bio_div">siusiaczek2</div>
+      <div className="big_div bio_div"></div>
 
-      <div className="big_div" style={{ height: "180px" }}>
-        siusiaczek2
-      </div>
+      <div className="big_div" style={{ height: "180px" }}></div>
 
       <div className="big_div flex_reversed">
         <div className="media_div" style={{ marginRight: "0px" }}></div>
