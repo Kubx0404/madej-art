@@ -28,48 +28,61 @@ html {
 }
 .big_div {
   margin: auto;
-  max-width: 1334px;
+  /* max-width: 1334px; */
+  max-width: 70vw;
   background-color: #d9d9d9;
   margin-top: 20px;
   border-radius: 33px;
-  padding: 17px;
+  /* padding: 17px; */
+  padding: 2vmin;
   display: flex;
 }
 .media_div {
   background-color: #ababab;
-  height: 70px;
-  width: 70px;
+  /* height: 7vh; */
+  width: 7vh;
   border-radius: 20px;
   margin-right: 24px;
+  aspect-ratio: 1/1;
 }
 .flex_reversed {
   flex-direction: row-reverse;
 }
 .bio_div {
-  height: 430px;
+  min-height: 40vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   flex-wrap: wrap;
 }
 .name {
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
-  margin-left: 1.8em;
+  font-size: 6.6vmin;
+  /* margin-left: 1.8em; */
+  margin-left: 6vw;
+  word-wrap: break-word;
+  /* white-space: pre-line; */
+  width: 43vw;
 }
 
 p {
-  display: block;
-  margin-block-start: 1.2em;
+  /* display: block; */
+  /* margin-block-start: 1.2em;
   margin-block-end: 1.2em;
   margin-inline-start: 1.2em;
-  margin-inline-end: 1.2em;
+  margin-inline-end: 1.2em; */
+  margin-block-start: 1vmin;
+  margin-block-end: 1vmin;
+  margin-inline-start: 1vmin;
+  margin-inline-end: 1vmin;
 }
 .bio_text {
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 2.6vmin;
   margin: 1em;
+  word-wrap: break-word;
+
   /* line-height: 30px; */
 }
 .big_button {
@@ -77,9 +90,27 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 5em;
-  padding-right: 5em;
+  /* padding-left: 5em; */
+  /* padding-right: 5em; */
+  padding-left: 4vw;
+  padding-right: 4vw;
   border-radius: 37px;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+}
+
+@media only screen and (max-width: 1570px) {
+  .big_div {
+    max-width: 75vw;
+  }
+}
+@media only screen and (max-width: 1330px) {
+  .big_div {
+    max-width: 85vw;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .big_div {
+    max-width: 95vw;
+  }
 }
