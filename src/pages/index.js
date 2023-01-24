@@ -50,7 +50,7 @@ export default function home() {
             // height: "28vh",
             // width: "13vw",
             width: "25vmin",
-            border: "6px solid #494B50",
+            border: "0.6vmin solid #494B50",
             // marginTop: "2.8em",
             marginTop: "6vmin",
             marginRight: "4vw",

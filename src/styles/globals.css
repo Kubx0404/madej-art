@@ -31,8 +31,11 @@ html {
   /* max-width: 1334px; */
   max-width: 70vw;
   background-color: #d9d9d9;
-  margin-top: 20px;
-  border-radius: 33px;
+  /* margin-top: 20px; */
+  margin-top: 1.6vmin;
+
+  /* border-radius: 33px; */
+  border-radius: 3vmin;
   /* padding: 17px; */
   padding: 2vmin;
   display: flex;
@@ -40,8 +43,8 @@ html {
 .media_div {
   background-color: #ababab;
   /* height: 7vh; */
-  width: 7vh;
-  border-radius: 20px;
+  width: 7vmin;
+  border-radius: 2vmin;
   margin-right: 24px;
   aspect-ratio: 1/1;
 }
@@ -94,9 +97,10 @@ p {
   /* padding-right: 5em; */
   padding-left: 4vw;
   padding-right: 4vw;
-  border-radius: 37px;
-  padding-top: 1.5vh;
-  padding-bottom: 1.5vh;
+  /* border-radius: 37px; */
+  border-radius: 3vmin;
+  padding-top: 2vmin;
+  padding-bottom: 2vmin;
 }
 
 @media only screen and (max-width: 1570px) {
