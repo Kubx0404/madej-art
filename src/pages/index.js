@@ -18,7 +18,7 @@ export default function home() {
 
       <div
         className="big_div bio_div"
-        style={{ minHeight: "50vh", justifyContent: "space-evenly" }}
+        style={{ minHeight: "50vmin", justifyContent: "space-evenly" }}
       >
         <div>
           <p
