@@ -45,8 +45,12 @@ html {
   /* height: 7vh; */
   width: 7vmin;
   border-radius: 2vmin;
-  margin-right: 24px;
+  margin-right: 3vmin;
   aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vmin;
 }
 .flex_reversed {
   flex-direction: row-reverse;
@@ -125,8 +129,8 @@ p {
 }
 .big_button:active {
   background-color: #494b50;
-  box-shadow: 0 4px #666;
-  transform: translateY(3px);
+  box-shadow: 0 0.3vmin #666;
+  transform: translateY(0.3vmin);
 }
 
 img {
@@ -139,9 +143,13 @@ img {
 
 .media_div:active {
   background-color: #7c7c7cd0;
-  box-shadow: 0 2px rgba(102, 102, 102, 0.5);
-  transform: translateY(2px);
+  box-shadow: 0 0.2vmin rgba(102, 102, 102, 0.5);
+  transform: translateY(0.2vmin);
 }
 .media_div:hover {
   background-color: #7c7c7cd0;
+}
+.icon {
+  fill: #303030;
+  color: #303030;
 }

@@ -119,10 +119,32 @@ export default function home() {
       </div>
 
       <div className="big_div flex_reversed">
-        <div className="media_div" style={{ marginRight: "0px" }}></div>
-        <div className="media_div"></div>
-        <div className="media_div"></div>
-        <div className="media_div"></div>
+        <a href="">
+          <div className="media_div" style={{ marginRight: "0px" }}>
+            <img
+              className="icon"
+              src="https://cdn.simpleicons.org/discord/303030"
+            />
+          </div>
+        </a>
+        <div className="media_div">
+          <img
+            className="icon"
+            src="https://cdn.simpleicons.org/instagram/303030"
+          />
+        </div>
+        <div className="media_div">
+          <img
+            className="icon"
+            src="https://cdn.simpleicons.org/facebook/303030"
+          />
+        </div>
+        <div className="media_div">
+          <img
+            className="icon"
+            src="https://cdn.simpleicons.org/github/303030"
+          />
+        </div>
       </div>
     </>
   );
