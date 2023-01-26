@@ -15,11 +15,6 @@ body {
   box-sizing: border-box;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
 html {
   background-color: #303030;
   color: #494b50;
@@ -152,4 +147,21 @@ img {
 .icon {
   fill: #303030;
   color: #303030;
+}
+.grayProgressBar {
+  background-color: grey;
+}
+.Toastify__toast-theme--light {
+  background: #d9d9d9 !important;
+  color: #494b50 !important;
+  width: fit-content !important;
+  border-radius: 2.2vmin !important;
+}
+.Toastify__toast-container {
+  width: 260px !important;
+}
+.Toastify__toast {
+  font-family: "Overpass Mono" !important;
+  font-weight: 600;
+  font-size: 85%;
 }

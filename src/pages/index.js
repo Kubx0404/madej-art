@@ -1,6 +1,8 @@
 // import '@/styles/Home.module.css'
 import styles from "../styles/Home.module.css";
 import madejzdjontko from "../../public/photo.png";
+import { copyDiscordTag } from "../lib/scripts.js";
+import { ToastContainer } from "react-toastify";
 
 export default function home() {
   return (
@@ -9,6 +11,7 @@ export default function home() {
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Overpass Mono"
       ></link>
+
       <div className="big_div">
         <div className="media_div"></div>
         <div className="media_div"></div>
@@ -119,32 +122,43 @@ export default function home() {
       </div>
 
       <div className="big_div flex_reversed">
-        <a href="">
-          <div className="media_div" style={{ marginRight: "0px" }}>
+        <div
+          onClick={copyDiscordTag}
+          className="media_div"
+          style={{ marginRight: "0px" }}
+        >
+          <img
+            className="icon"
+            src="https://cdn.simpleicons.org/discord/303030"
+          />
+        </div>
+
+        <a href="https://www.instagram.com/qba0404/" target="_blank">
+          <div className="media_div">
             <img
               className="icon"
-              src="https://cdn.simpleicons.org/discord/303030"
+              src="https://cdn.simpleicons.org/instagram/303030"
             />
           </div>
         </a>
-        <div className="media_div">
-          <img
-            className="icon"
-            src="https://cdn.simpleicons.org/instagram/303030"
-          />
-        </div>
-        <div className="media_div">
-          <img
-            className="icon"
-            src="https://cdn.simpleicons.org/facebook/303030"
-          />
-        </div>
-        <div className="media_div">
-          <img
-            className="icon"
-            src="https://cdn.simpleicons.org/github/303030"
-          />
-        </div>
+
+        <a href="https://www.facebook.com/jakub.madejczyk.921/" target="_blank">
+          <div className="media_div">
+            <img
+              className="icon"
+              src="https://cdn.simpleicons.org/facebook/303030"
+            />
+          </div>
+        </a>
+
+        <a href="https://github.com/Kubx0404" target="_blank">
+          <div className="media_div">
+            <img
+              className="icon"
+              src="https://cdn.simpleicons.org/github/303030"
+            />
+          </div>
+        </a>
       </div>
     </>
   );
