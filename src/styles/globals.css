@@ -158,10 +158,12 @@ img {
   border-radius: 2.2vmin !important;
 }
 .Toastify__toast-container {
-  width: 260px !important;
+  /* width: 260px !important; */
+  width: fit-content !important;
+  height: 3vmin !important;
 }
 .Toastify__toast {
   font-family: "Overpass Mono" !important;
-  font-weight: 600;
-  font-size: 85%;
+  font-weight: 600 !important;
+  font-size: 1.8vmin !important;
 }
