@@ -21,10 +21,7 @@ export default function home() {
           <div className="media_div">
             <img
               className="icon"
-              src="home.svg"
-              height="40vw"
-              // color="#303030"
-              // fill="#303030"
+              src="https://cdn.simpleicons.org/googlehome/303030"
             />
           </div>
         </Link>
