@@ -15,6 +15,17 @@ body {
   box-sizing: border-box;
 }
 
+.line {
+  width: 57.5vw;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  margin-top: 4vmin;
+  margin-bottom: 3vmin;
+}
+.linediv {
+  width: fit-content;
+}
+
 html {
   background-color: #303030;
   color: #494b50;
@@ -55,6 +66,7 @@ html {
   display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .name {
   font-style: normal;
@@ -102,19 +114,28 @@ p {
   padding-right: 6.5vmin;
 }
 
-@media only screen and (max-width: 1570px) {
+@media only screen and (max-width: 1640px) {
   .big_div {
     max-width: 75vw;
+  }
+  .line {
+    width: 62.5vw;
   }
 }
 @media only screen and (max-width: 1330px) {
   .big_div {
     max-width: 85vw;
   }
+  .line {
+    width: 72vw;
+  }
 }
 @media only screen and (max-width: 890px) {
   .big_div {
     max-width: 95vw;
+  }
+  .line {
+    width: 80.5vw;
   }
 }
 .big_button:hover {

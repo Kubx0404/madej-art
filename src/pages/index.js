@@ -1,19 +1,34 @@
 // import '@/styles/Home.module.css'
 import styles from "../styles/Home.module.css";
-import madejzdjontko from "../../public/photo.png";
 import { copyDiscordTag } from "../lib/scripts.js";
-import { ToastContainer } from "react-toastify";
+import Link from "next/link";
 
 export default function home() {
   return (
     <>
+      <title>Jakub Madejczyk</title>
+      <link
+        rel="icon"
+        type="image/png"
+        href="https://www.w3docs.com/favicon.ico"
+      />
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Overpass Mono"
       ></link>
-
       <div className="big_div">
-        <div className="media_div"></div>
+        <Link href="/">
+          <div className="media_div">
+            <img
+              className="icon"
+              src="home.svg"
+              height="40vw"
+              // color="#303030"
+              // fill="#303030"
+            />
+          </div>
+        </Link>
+
         <div className="media_div"></div>
         <div className="media_div"></div>
         <div className="media_div" style={{ marginRight: "0px" }}></div>
@@ -21,7 +36,7 @@ export default function home() {
 
       <div
         className="big_div bio_div"
-        style={{ minHeight: "50vmin", justifyContent: "space-evenly" }}
+        style={{ minHeight: "50vmin", justifyContent: "space-between" }}
       >
         <div>
           <p
@@ -48,19 +63,11 @@ export default function home() {
           alt="photo"
           style={{
             borderRadius: "50%",
-            // height: "260px",
-            // width: "260px",
-            // height: "28vh",
-            // width: "13vw",
             width: "25vmin",
             border: "0.6vmin solid #494B50",
-            // marginTop: "2.8em",
             marginTop: "6vmin",
-            marginRight: "4vw",
+            marginRight: "5.50vw",
             marginBottom: "4vw",
-
-            // marginRight: "5vw",
-            // aspectRatio: "1/1",
             alignSelf: "flex-start",
             minWidth: "0",
           }}
@@ -73,34 +80,30 @@ export default function home() {
           paddingLeft: "5vmin",
           paddingRight: "5vmin",
           justifyContent: "space-between",
-          // padding: "1.5em",
-          // paddingTop: "1.5em",
-          // paddingBottom: "1.5em",
         }}
       >
-        <div className="big_button">
-          <img
-            src="code.svg"
-            alt="code"
-            style={{
-              // height: "90px",
-              // width: "90px",
-              height: "4.5vw",
-            }}
-            x
-          />
-        </div>
-        <div className="big_button">
-          <img
-            src="camera.svg"
-            alt="code"
-            style={{
-              height: "4.5vw",
-              // width: "3.5vw",
-              // aspectRatio: "1/1",
-            }}
-          />
-        </div>
+        <Link href="/programming">
+          <div className="big_button">
+            <img
+              src="code.svg"
+              alt="code"
+              style={{
+                height: "4.5vw",
+              }}
+            />
+          </div>
+        </Link>
+        <Link href="/photo">
+          <div className="big_button">
+            <img
+              src="camera.svg"
+              alt="code"
+              style={{
+                height: "4.5vw",
+              }}
+            />
+          </div>
+        </Link>
         <div className="big_button">
           <img
             src="student.svg"
